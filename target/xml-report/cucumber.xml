@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="11" time="133.35">
+    <testcase classname="Admin_tarafindan_hasta_olusturma_ve_duzenleme" name="TC003_Yonetici_Hasta_olusturdugunda_veya_guncellediginde_yukaridaki_ogelere_data_girisi_yapabilmeli" time="16.937">
+        <system-out>
+            <![CDATA[When Yonetici url gider.....................................................passed
+And Sign in ikonuna tiklar..................................................passed
+And Yonetici username ve password bilgileri girer...........................passed
+And Sign in buttonuna tiklar................................................passed
+And Items&Titles sekmesini tiklar...........................................passed
+Given Patient secenegini secer ve tiklar....................................passed
+And Ilk satirdaki hastanin Edit buttonuna tiklar............................passed
+Then Hastanin id boxunu dogurular...........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Admin_tarafindan_hasta_olusturma_ve_duzenleme" name="TC005_State_buttonu_Us_state olmali_bos_birakilmamali" time="10.627">
+        <system-out>
+            <![CDATA[When Yonetici url gider.....................................................passed
+And Sign in ikonuna tiklar..................................................passed
+And Yonetici username ve password bilgileri girer...........................passed
+And Sign in buttonuna tiklar................................................passed
+And Items&Titles sekmesini tiklar...........................................passed
+Given State City secenegini secer ve tiklar.................................passed
+And Create a new State City buttonuna tiklar................................passed
+And Name textboxna tiklar ve isim yazar.....................................passed
+Then State City sekmesine tiklar ve Us secenegini secer.....................passed
+And Save buttonuna tiklar...................................................passed
+And Successful mesajini goruldugunu dogrular................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Admin_tarafindan_hasta_olusturma_ve_duzenleme" name="TC006_Yonetici_herhangi_bir_hastayi_silebilmeli" time="8.28">
+        <system-out>
+            <![CDATA[When Yonetici url gider.....................................................passed
+And Sign in ikonuna tiklar..................................................passed
+And Yonetici username ve password bilgileri girer...........................passed
+And Sign in buttonuna tiklar................................................passed
+And Items&Titles sekmesini tiklar...........................................passed
+Given Patient secenegini secer ve tiklar....................................passed
+And Ilk satirdaki hastanin Delete buttonuna tiklar..........................passed
+Then Confirm delete operation yazisi altindaki Delete buttonuna tiklar......passed
+And Successful mesajini dogrular............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US_16" name="TC_02" time="10.06">
+        <system-out>
+            <![CDATA[Given FAdmin, Url' e gider..................................................passed
+And FAdmin,insan figurune basar.............................................passed
+And FAdmin, signIn buttonuna basar..........................................passed
+And FAdmin, username ve password girer......................................passed
+And FAdmin, sign in tiklanir................................................passed
+Given FAdmin, items&titles tiklanir.........................................passed
+And FRoom secilir...........................................................passed
+And FCreate a new room tiklanir.............................................passed
+And FRoom Number bos birakilirsa "This field is required." hatasi verir.....passed
+Then FRoom type drapdowdan oda tipi secimi yapilabilmeli....................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US_16" name="TC_03 Oda için &quot;Status&quot; ayarlanabilir olmalı." time="16.623">
+        <system-out>
+            <![CDATA[Given FAdmin, Url' e gider..................................................passed
+And FAdmin,insan figurune basar.............................................passed
+And FAdmin, signIn buttonuna basar..........................................passed
+And FAdmin, username ve password girer......................................passed
+And FAdmin, sign in tiklanir................................................passed
+Given FAdmin, items&titles tiklanir.........................................passed
+And FRoom secilir...........................................................passed
+And FCreate a new room tiklanir.............................................passed
+Then FStatus tiklanabilmeli.................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US_16" name="TC_04 Fiyat eklenebilir olmalı ve boş bırakılamamalı." time="19.827">
+        <system-out>
+            <![CDATA[Given FAdmin, Url' e gider..................................................passed
+And FAdmin,insan figurune basar.............................................passed
+And FAdmin, signIn buttonuna basar..........................................passed
+And FAdmin, username ve password girer......................................passed
+And FAdmin, sign in tiklanir................................................passed
+Given FAdmin, items&titles tiklanir.........................................passed
+And FRoom secilir...........................................................passed
+And FCreate a new room tiklanir.............................................passed
+Then FPrice box bos birakilirsa "This field is required." hatasi verir......passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US_16" name="TC_08 Admin mevcut odaları düzenleyebilir ve güncelleyebilir." time="16.552">
+        <system-out>
+            <![CDATA[Given FAdmin, Url' e gider..................................................passed
+And FAdmin,insan figurune basar.............................................passed
+And FAdmin, signIn buttonuna basar..........................................passed
+And FAdmin, username ve password girer......................................passed
+And FAdmin, sign in tiklanir................................................passed
+Given FAdmin, items&titles tiklanir.........................................passed
+And FRoom secilir...........................................................passed
+Then FRooms tablosunda istedigi "1451" deki roomu editi tiklayarak guncelleme yapabilir.passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US_017" name="TC_1703 Admin test öğelerini görüntüleyebilir." time="12.415">
+        <system-out>
+            <![CDATA[Given Kullanici URL'e gider.................................................passed
+And Sign in sayfasina gider.................................................passed
+And E "ADMINEmrah" ve "Amine2016+-" girer...................................passed
+And E Sign in butonuna basar................................................passed
+And E Admin olarak giris yaptıgını dogrular.................................passed
+And E Items&Title butonuna tıklar...........................................passed
+Then E Test Item sayfasina gider............................................passed
+And Test items goruntuleyebildigini dogrular................................passed
+And sign out butonuna basar.................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Admin olarak; Yeni Physicians Oluştur / Güncelle / Görüntüle ve Sil" name="TC_1803 Admin Doktor için bir uzmanlık alanı seçebilmeli." time="10.859">
+        <system-out>
+            <![CDATA[Given Kullanici URL'e gider.................................................passed
+And Sag ustte bulunan kullanici ikonuna tiklar..............................passed
+When Acilan pencerede sign in secenegini tiklar.............................passed
+And Admin username girer....................................................passed
+And Admin password girer....................................................passed
+Then Kullanci sign in butonuna basar........................................passed
+When Items&Titles linkine tiklar............................................passed
+Then Acilan pencerede Physician linkine tiklar..............................passed
+And Ekranin saginda bulunan Create a new Physician butonuna tiklar..........passed
+And Use Search checkbox bos ise tiklanir....................................passed
+Then Ssn textboxa kayitli ssn yazilir.......................................passed
+And Search User butonuna basilir............................................passed
+And Sayfayi asagi kaydirir..................................................passed
+And Speciality dropdowndan uzmanlik alanini secer...........................passed
+Then Uzmanlik alaninin secilebildigi goruntulenir...........................passed
+And sign out butonuna basar.................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Hasta Test sonuclari (Staff)" name="TC 002 Kullanici (Staff) test sonuclarini gorebilmelidir" time="7.276">
+        <system-out>
+            <![CDATA[Given Kullanici URL'e gider.................................................passed
+And Sign in sayfasina gider.................................................passed
+Then ZKullanici Staff olarak giris yapar   "stfzuhal" ve "Drzuhal308*" girer.passed
+And ZMy Pages butonundan search  patient a tiklar...........................passed
+And ZShow Appointments a tiklar ve Show test tiklanir.......................passed
+And ZTest sonuclarinin goruldugu dogrulanir.................................passed
+And Zkullanici sing out elementine tiklar...................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US_024" name="TC_2401" time="3.117">
+        <system-out>
+            <![CDATA[Given cPatient url'e gider..................................................passed
+And cLogin ikonuna tiklar...................................................passed
+And cSign in sekmesine tiklar...............................................passed
+And cPatient username ve password girer.....................................passed
+And csign in butonuna tiklar................................................passed
+And 1 saniye bekler.........................................................passed
+And cMy pages patient sekmesine tiklar......................................passed
+Then cMy Appointments sekmesine tiklar......................................passed
+Then cShow test butonuna tiklar.............................................passed
+And 1 saniye bekler.........................................................passed
+And cTest sayfasinin acildigini dogrular....................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
